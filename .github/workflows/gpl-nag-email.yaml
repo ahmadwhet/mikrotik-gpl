@@ -108,7 +108,7 @@ jobs:
           # Required mail subject:
           subject: Request for open source code included in "RouterOS v${{ matrix.version}}"
           # Required recipients' addresses:
-          to: ${{ github.event.inputs.mailto}}
+          to: ${{ github.event.inputs.mailto || 'support@mikrotik.com,mt@mikrotik.com'}}
           # Required sender full name (address can be skipped):
           from: TIKOCI GitHub Organization # <user@example.com>
           # Optional plain body:
